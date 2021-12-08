@@ -1,23 +1,22 @@
-package ss5_accessmodifier_staticmethod_staticproperty.Bai_tap;
+package ss6_Inheritance.Bai_tap;
 
-public class TestCircle {
+public class Circle {
     private double radius;
-    private String color = "red";
+    private String color;
 
-    public TestCircle() {
+    public Circle() {
     }
 
-    public TestCircle(double radius ){
+    public Circle(double radius, String color) {
         this.radius = radius;
+        this.color = color;
     }
 
     public double getRadius() {
-
         return radius;
     }
 
     public void setRadius(double radius) {
-
         this.radius = radius;
     }
 
@@ -26,17 +25,19 @@ public class TestCircle {
     }
 
     public void setColor(String color) {
-
         this.color = color;
     }
 
     public double getArea() {
-
         return Math.pow(this.radius, 2) * Math.PI;
     }
 
-    public static void main(String[] args) {
-        TestCircle circle = new TestCircle(1);
-        System.out.println("Area: " + circle.getArea());
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
+                + getArea() ;
     }
 }
