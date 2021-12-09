@@ -56,9 +56,9 @@ public class MovablePoint extends Point {
     }
 
     public static void main(String[] args) {
-        MovablePoint movablePoint = new MovablePoint(199, 299);
+        MovablePoint movablePoint = new MovablePoint(199.0f, 299.0f);
         System.out.println(movablePoint);
-        MovablePoint movablePoint1 = new MovablePoint(2,4, 116,218);
+        MovablePoint movablePoint1 = new MovablePoint(2.0f,4.0f, 116.0f,218.0f);
         System.out.println(movablePoint1);
 //        System.out.println(movablePoint1.xSpeed);
         System.out.println(movablePoint1.move());

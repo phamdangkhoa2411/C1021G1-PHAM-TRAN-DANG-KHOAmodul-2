@@ -1,6 +1,8 @@
 package ss6_Inheritance.Bai_tap;
 
-public class Cylinder extends Circle{
+import ss7_Abstract_Class_Interface.Bai_tap.Resizeable.Circle;
+
+public class Cylinder extends Circle {
     private double height;
 
     public Cylinder() {

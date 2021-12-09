@@ -1,15 +1,16 @@
-package ss6_Inheritance.Bai_tap;
+package ss7_Abstract_Class_Interface.Bai_tap.Resizeable;
 
-public class Circle {
+public class Circle extends Shape  {
     private double radius;
     private String color;
 
     public Circle() {
     }
 
-    public Circle(double radius, String color) {
+    public Circle(double radius, String color  ) {
         this.radius = radius;
         this.color = color;
+
     }
 
     public double getRadius() {
@@ -39,5 +40,10 @@ public class Circle {
                 "radius=" + radius +
                 ", color='" + color + '\'' +
                 + getArea() ;
+    }
+
+    @Override
+    public void resize(double percent) {
+
     }
 }

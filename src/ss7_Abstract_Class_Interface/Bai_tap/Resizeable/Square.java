@@ -1,6 +1,6 @@
-package ss6_Inheritance.Thuc_hanh;
+package ss7_Abstract_Class_Interface.Bai_tap.Resizeable;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle {
     public Square() {
     }
 
@@ -33,9 +33,9 @@ public class Square extends Rectangle{
 
     @Override
     public String toString() {
-        return "A Square with side="
+        return "A Square with side="+"\n"
                 + getSide()
-                + ", which is a subclass of "
+                + ", which is a subclass of "+"\n"
                 + super.toString();
     }
     public static void main(String[] args) {

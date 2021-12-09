@@ -1,6 +1,6 @@
 package ss6_Inheritance.Thuc_hanh;
 
-public class Circle extends Shape{
+public class Circle extends Shape {
     private double radius = 1.0;
 
     public Circle() {

@@ -1,6 +1,6 @@
-package ss6_Inheritance.Thuc_hanh;
+package ss7_Abstract_Class_Interface.Bai_tap.Resizeable;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape  {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -60,5 +60,10 @@ public class Rectangle extends Shape{
 
         rectangle = new Rectangle(2.5, 3.8, "orange", true);
         System.out.println(rectangle);
+    }
+
+    @Override
+    public void resize(double percent) {
+
     }
 }
