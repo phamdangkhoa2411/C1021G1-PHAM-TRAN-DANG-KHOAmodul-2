@@ -1,9 +1,11 @@
-package ss8_Clean_Code_And_Refactoring.Bai_tap;
+package ss8_Clean_Code_And_Refactoring.Thuc_hanh;
 
 public class Calculator {
-    public static final String ADDITION = "+";
-    public static final String SUBTRACTION = "-";
-    public static final String MULTIPLICATION = "*";
+
+    public static final char ADDITION = '+';
+    public static final char SUBTRACTION = '-';
+    public static final char MULTIPLICATION = '*';
+    public static final char DIVISION = '/';
 
     public static int calculate(int firstOperand, int secondOperand, char operato) {
         switch (operato) {
@@ -13,7 +15,7 @@ public class Calculator {
                 return firstOperand - secondOperand;
             case MULTIPLICATION:
                 return firstOperand * secondOperand;
-            case '/':
+            case DIVISION:
                 if (secondOperand != 0)
                     return firstOperand / secondOperand;
                 else

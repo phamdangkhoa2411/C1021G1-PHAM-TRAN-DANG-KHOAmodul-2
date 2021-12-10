@@ -1,12 +1,12 @@
 package ss7_Abstract_Class_Interface.Bai_tap.Colorable;
 
-public abstract class Shape implements Colorable {
+public abstract class Shape1 implements Colorable {
     private String color = "green";
     private boolean filled = true;
 
-    public Shape() {}
+    public Shape1() {}
 
-    public Shape(String color, boolean filled) {
+    public Shape1(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
     }
