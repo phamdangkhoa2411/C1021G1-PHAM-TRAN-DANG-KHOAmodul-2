@@ -1,47 +1,41 @@
 package ss8_Clean_Code_And_Refactoring.Bai_tap;
 
 public class TennisGame {
+    public static String getScore(String player1Name, String player2Name, int player1Score, int player2Score) {
+        int tempScore = 0;
 
-    public static String getScore(String player1Name, String player2Name, int Player1, int Player2) {
-        String score ="";
-        int tempScore=0;
-        if (Player1 == Player2)
-        {
-            score = getDraw(Player1);
-        }
-        else if (Player1 >=4 || Player2 >=4)
-        {
-            score = whoWin(Player1, Player2);
-        }
-        else
-        {
-            for (int i=1; i<3; i++)
-            {
-                if (i==1) tempScore = Player1;
-                else { score+="-"; tempScore = Player2;}
-                switch(tempScore)
-                {
-                    case 0:
-                        score+="Love";
-                        break;
-                    case 1:
-                        score+="Fifteen";
-                        break;
-                    case 2:
-                        score+="Thirty";
-                        break;
-                    case 3:
-                        score+="Forty";
-                        break;
-                }
-            }
-        }
+        boolean draw = player1Score == player2Score;
+        boolean victory = player1Score >= 4 || player2Score >= 4;
+        if (victory) return whoWin(player1Score, player2Score);
+        if (draw)return getDraw(player1Score);
+        String score = getPoint1(player1Score) + "-" + getPoint1(player2Score);
         return score;
     }
 
-    private static String getDraw(int Player1) {
+
+
+    private static String getPoint1(int tempScore) {
+        switch(tempScore)
+        {
+            case 0:
+                return "Love";
+
+            case 1:
+                return "Fifteen";
+
+            case 2:
+                return "Thirty";
+
+            case 3:
+                return "Forty";
+
+        }
+        return null;
+    }
+
+    private static String getDraw(int player1Score) {
         String score;
-        switch (Player1)
+        switch (player1Score)
         {
             case 0:
                 score = "Love-All";
@@ -56,20 +50,21 @@ public class TennisGame {
                 score = "Forty-All";
                 break;
             default:
-                score = "Deuce"  ; // Deuce = hòa
+                score = "Deuce";
                 break;
 
         }
         return score;
     }
 
-    private static String whoWin(int Player1, int Player2) {
+    private static String whoWin(int player1Score, int player2Score) {
         String score;
-        int minusResult = Player1 - Player2;
+        int minusResult = player1Score - player2Score;
         if (minusResult==1) score ="Advantage player1";
         else if (minusResult ==-1) score ="Advantage player2";
         else if (minusResult>=2) score = "Win for player1";
         else score ="Win for player2";
         return score;
     }
+
 }
