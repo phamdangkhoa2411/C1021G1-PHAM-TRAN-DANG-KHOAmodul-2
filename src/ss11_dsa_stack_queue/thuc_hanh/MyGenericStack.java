@@ -1,4 +1,4 @@
-package ss11_DSA_Stack_Queue.thuc_hanh;
+package ss11_dsa_stack_queue.thuc_hanh;
 
 import java.util.EmptyStackException;
 import java.util.LinkedList;

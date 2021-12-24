@@ -1,7 +1,6 @@
-package ss12_Java_Collection_Framework.Practice.Map;
+package ss12_Java_Collection_Framework.thuc_hanh.Map;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 

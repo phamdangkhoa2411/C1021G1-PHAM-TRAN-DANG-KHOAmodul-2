@@ -1,7 +1,5 @@
 package ss11_dsa_stack_queue.bai_tap;
 
-import sun.tools.jstack.JStack;
-
 import java.util.Scanner;
 import java.util.Stack;
 

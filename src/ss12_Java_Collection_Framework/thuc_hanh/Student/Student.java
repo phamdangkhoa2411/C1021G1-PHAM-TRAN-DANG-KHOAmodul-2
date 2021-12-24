@@ -1,4 +1,4 @@
-package ss12_Java_Collection_Framework.Practice.Student;
+package ss12_Java_Collection_Framework.thuc_hanh.Student;
 
 public class Student {
     private String name;

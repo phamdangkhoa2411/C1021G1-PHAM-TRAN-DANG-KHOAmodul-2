@@ -1,4 +1,4 @@
-package ss12_Java_Collection_Framework.Practice.Sort;
+package ss12_Java_Collection_Framework.thuc_hanh.Sort;
 
 public class Student implements Comparable <Student>{
 
